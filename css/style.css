@@ -8,46 +8,74 @@ body {
   display: block;
 }
 
-.container {
+.container > h1 {
   margin: 20px auto;
-  width: 60%;
+  width: 100%;
+  font-size: 1.4em;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .preview {
   background-color: #dadada;
   margin: 1% 0;
-  width: 90%;
+  width: 100%;
   padding: 25px 25px;
-  max-height: 400px;
+  height: 300px;
 }
+ .preview h1 {
+   font-size:  2.5em;
+   text-align: left;
+ }
 
 .baku {
   background-image: url('../images/baku.jpg');
-  background-position: center;
+  background-position: left;
+  background-size: cover;
 }
 
 .london {
   background-image: url('../images/london.png');
   background-position: center;
+  background-size: cover;
 }
 
 .madrid {
   background-image: url('../images/madrid.jpg');
   background-position: center;
+  background-size: cover;
 }
 
 .rome {
   background-image: url('../images/rome.jpg');
   background-position: center;
+  background-size: cover;
 }
 
-@media screen and (min-width: 501px) and (max-width: 768px) {
-  div {
-    margin: 1%;
+@media screen and (min-width: 500px){
+
+  .container{
+    width: 80%;
+    margin: 0 auto;
+}
+  .preview{
+    float: right;
     width: 48%;
+    height: 200px;
+    margin: 1% 1%;
   }
-  @media screen and (min-width: 769px) and (max-width: 1600px) {
-  div {
-    margin: 1%;
-    width: 48%;
+}
+  @media screen and (min-width: 900px){
+    .container{
+      width: 70%;
+  }
+    .preview{
+      width: 23%;
+      height: 200px;
+      margin: 2em 1%;
+      float: left;
+    }
+
+
   }
